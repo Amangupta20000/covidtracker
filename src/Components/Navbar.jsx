@@ -13,7 +13,7 @@ function NavBar() {
       
             <ul className="navbar-nav ">
               <li className="nav-item">
-                <NavLink activeClassName="menu_active" exact className="nav-link text-info " aria-current="page" to='/' >HOME</NavLink>
+                <NavLink activeClassName="menu_active" exact className="nav-link text-info " aria-current="page" to='/covidtracker/' >HOME</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink activeClassName="menu_active" exact className="nav-link text-info " aria-current="page" to='/statewise' >STATEWISE</NavLink>
