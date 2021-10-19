@@ -32,7 +32,7 @@ function Statewise() {
                                 <th className='table_heading'>State</th>
                                 <th className='table_heading'>Confirmed</th>
                                 <th className='table_heading'>Active</th>
-                                <th className='table_heading'>New Active</th>
+                                <th className='table_heading d-sm-block d-none'>New Active</th>
                                 <th className='table_heading'>Recovered</th>
                                 <th className='table_heading'>New Recovered</th>
                                 <th className='table_heading'>Deceased</th>
@@ -46,7 +46,7 @@ function Statewise() {
                                         <td className='table_text'>{curElem.region}</td>
                                         <td className='table_text'>{curElem.totalInfected}</td>
                                         <td className='table_text'>{curElem.activeCases}</td>
-                                        <td className='table_text'>⬆ {curElem.newRecovered+curElem.newInfected}</td>
+                                        <td className='table_text d-sm-block d-none'>⬆ {curElem.newRecovered+curElem.newInfected}</td>
                                         <td className='table_text'>{curElem.recovered}</td>
                                         <td className='table_text'>⬆ {curElem.newRecovered}</td>
                                         <td className='table_text'>{curElem.deceased}</td>
