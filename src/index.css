@@ -256,7 +256,7 @@ th {
     height: 10rem;
   }
   .navbar-nav {
-    padding: 0.5rem 1.5rem !important;
+    /* padding: 0.5rem 1.5rem !important; */
   }
   .navbar-nav .nav-link {
     font-size: small;

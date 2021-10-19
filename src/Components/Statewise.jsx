@@ -20,7 +20,7 @@ function Statewise() {
 
     return (
         <>     
-            <div className='container-fluid mt-5 mb-5 pb-5'>
+            <div className='container mt-5 mb-5 pb-5'>
                 <div className='statewise_main_heading'>
                     <h1 className='text-center text-warning all_states '>All States/UT Stats </h1>
                     <h4 className='text-center last_updated text-warning mt-3 mb-5 '>(Last Updated at {time})</h4>  
