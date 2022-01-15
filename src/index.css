@@ -158,7 +158,7 @@ th {
   width: 100%;
   z-index: -1;
 }
-.table tr td:hover:nth-child(7) {
+.table tr td:hover:nth-child(5) {
   background-color: rgb(204, 0, 0);
   color: aliceblue;
 }
