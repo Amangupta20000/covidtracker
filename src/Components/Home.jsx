@@ -9,14 +9,17 @@ function Home() {
             const res = await fetch('https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true')
             const actualData = await res.json();
             setdata(actualData);
-            settime(moment(actualData.lastUpdatedAtApify).format('DD-MM-YYYY h:mm:ss A'))
+            settime(moment(actualData.lastUpdatedAtApify).format(' h:mm:ss A'))
+
+           // settime(moment(actualData.lastUpdatedAtApify).format('DD-MM-YYYY h:mm:ss A'))
        }catch(err){
             console.log(err);
        }
     }
     useEffect(() => {
        getCovidData();
-    }, [])
+    }, []) 
+    //console.log(data);
     return (
         <>
         <section>     

@@ -18,7 +18,7 @@ function Statewise() {
 const getCovidData = async () => {
     try{
          const res = await fetch('https://api.rootnet.in/covid19-in/stats/latest')
-         const actualData = await res.json();
+         const actualData = await res.json();console.log(actualData);
        setData(actualData.data.regional)
        settime(moment(actualData.lastOriginUpdate).format(' h:mm:ss A'))
     }catch(err){
@@ -46,8 +46,9 @@ const getCovidData = async () => {
                                 <th className='table_heading'>Active</th>
                                 { // <th className='table_heading d-sm-block d-none'>New Active</th>
                                 }<th className='table_heading'>Recovered</th>
-                               {// <th className='table_heading'>New Recovered</th>
-                                } <th className='table_heading'>Deceased</th>
+                               {// <th className='table_heading'>New Recovered</th> 
+                            }
+                                 <th className='table_heading'>Deceased</th>
                             </tr>
                         </thead>
                         <tbody className=' mb-5 text-white scrollResponsive'>
